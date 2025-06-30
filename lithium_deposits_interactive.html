@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a74b9f79c8b0e94e509932122780cce0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a74b9f79c8b0e94e509932122780cce0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a74b9f79c8b0e94e509932122780cce0 = L.map(
+                "map_a74b9f79c8b0e94e509932122780cce0",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b3d744e38d8944d3618235ed1136dbb = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9b3d744e38d8944d3618235ed1136dbb.addTo(map_a74b9f79c8b0e94e509932122780cce0);
+        
+    
+            var marker_cluster_293f051bf5b61d21a4511e39bf984ac9 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_024338fa39bb2c37831e627fd073657d = L.circleMarker(
+                [37.78, -117.57],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_269b2bd105446775f885c2aa11569d74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b1f1e36563719e60d02daadfd84642b = $(`<div id="html_1b1f1e36563719e60d02daadfd84642b" style="width: 100.0%; height: 100.0%;"><b>Clayton Valley</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_269b2bd105446775f885c2aa11569d74.setContent(html_1b1f1e36563719e60d02daadfd84642b);
+            
+        
+
+        circle_marker_024338fa39bb2c37831e627fd073657d.bindPopup(popup_269b2bd105446775f885c2aa11569d74)
+        ;
+
+        
+    
+    
+            var circle_marker_0a358dfa2f61773d260526180bedcaf5 = L.circleMarker(
+                [35.74, -117.33],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_7188366be08cc31bceb84e8d35559941 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fabfab0052cae7fb8ae797952f9a6b64 = $(`<div id="html_fabfab0052cae7fb8ae797952f9a6b64" style="width: 100.0%; height: 100.0%;"><b>Searles Lake</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_7188366be08cc31bceb84e8d35559941.setContent(html_fabfab0052cae7fb8ae797952f9a6b64);
+            
+        
+
+        circle_marker_0a358dfa2f61773d260526180bedcaf5.bindPopup(popup_7188366be08cc31bceb84e8d35559941)
+        ;
+
+        
+    
+    
+            var circle_marker_06a156193230fdfdcb8ec6038832692d = L.circleMarker(
+                [33.36, -115.87],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_672d79fc5e22148615b344ebd17602a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e43fa95525aae3eb2f9fad6239780ad = $(`<div id="html_7e43fa95525aae3eb2f9fad6239780ad" style="width: 100.0%; height: 100.0%;"><b>Salton Sea</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_672d79fc5e22148615b344ebd17602a1.setContent(html_7e43fa95525aae3eb2f9fad6239780ad);
+            
+        
+
+        circle_marker_06a156193230fdfdcb8ec6038832692d.bindPopup(popup_672d79fc5e22148615b344ebd17602a1)
+        ;
+
+        
+    
+    
+            var circle_marker_37c983eb42ad32b8c286431ff5c8261b = L.circleMarker(
+                [31.43, 84.05],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_c9a74a9a590c2fd4a447599ee4e7594b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ed40ccc28cbac7a4ddaa78d921081aa = $(`<div id="html_9ed40ccc28cbac7a4ddaa78d921081aa" style="width: 100.0%; height: 100.0%;"><b>Zhabuye Lake</b><br>         Country: Tibet<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_c9a74a9a590c2fd4a447599ee4e7594b.setContent(html_9ed40ccc28cbac7a4ddaa78d921081aa);
+            
+        
+
+        circle_marker_37c983eb42ad32b8c286431ff5c8261b.bindPopup(popup_c9a74a9a590c2fd4a447599ee4e7594b)
+        ;
+
+        
+    
+    
+            var circle_marker_3ac91a20d310fe39174ccb427ffdd5ff = L.circleMarker(
+                [37.5, 93.94],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_30eabc07c88307c8034443eb15c691e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9714f11cfd09e3f1c317f3acb72b466d = $(`<div id="html_9714f11cfd09e3f1c317f3acb72b466d" style="width: 100.0%; height: 100.0%;"><b>Tanjainer Lake</b><br>         Country: China<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_30eabc07c88307c8034443eb15c691e3.setContent(html_9714f11cfd09e3f1c317f3acb72b466d);
+            
+        
+
+        circle_marker_3ac91a20d310fe39174ccb427ffdd5ff.bindPopup(popup_30eabc07c88307c8034443eb15c691e3)
+        ;
+
+        
+    
+    
+            var circle_marker_3d84ce1d25b01fc2b9c42739f5ada04b = L.circleMarker(
+                [31.42, 35.43],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_a85587da6af85b59a91a4a2e953a512a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc0f78d1a3063cbae7c7afa0169c292b = $(`<div id="html_bc0f78d1a3063cbae7c7afa0169c292b" style="width: 100.0%; height: 100.0%;"><b>Dead Sea</b><br>         Country: Israel<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_a85587da6af85b59a91a4a2e953a512a.setContent(html_bc0f78d1a3063cbae7c7afa0169c292b);
+            
+        
+
+        circle_marker_3d84ce1d25b01fc2b9c42739f5ada04b.bindPopup(popup_a85587da6af85b59a91a4a2e953a512a)
+        ;
+
+        
+    
+    
+            var circle_marker_9d768a2fed15f163c4cedce1b40add34 = L.circleMarker(
+                [39.74, -114.89],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_8f00a9b44efad002c61be978b8014bde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36a30f761a6ee040c70abefe01796e9d = $(`<div id="html_36a30f761a6ee040c70abefe01796e9d" style="width: 100.0%; height: 100.0%;"><b>Moebius</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_8f00a9b44efad002c61be978b8014bde.setContent(html_36a30f761a6ee040c70abefe01796e9d);
+            
+        
+
+        circle_marker_9d768a2fed15f163c4cedce1b40add34.bindPopup(popup_8f00a9b44efad002c61be978b8014bde)
+        ;
+
+        
+    
+    
+            var circle_marker_9916b3a6ccbfd114bb032ca1ee794cfd = L.circleMarker(
+                [38.05, -117.37],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_a0c988b021c2387d7f74ea1034c063fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2fb6f5241f2e809a04c7d3a4c6d0238 = $(`<div id="html_a2fb6f5241f2e809a04c7d3a4c6d0238" style="width: 100.0%; height: 100.0%;"><b>Silver Peak</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_a0c988b021c2387d7f74ea1034c063fd.setContent(html_a2fb6f5241f2e809a04c7d3a4c6d0238);
+            
+        
+
+        circle_marker_9916b3a6ccbfd114bb032ca1ee794cfd.bindPopup(popup_a0c988b021c2387d7f74ea1034c063fd)
+        ;
+
+        
+    
+    
+            var circle_marker_7d1b6a578ab4ea3feeb1569a902d856e = L.circleMarker(
+                [54.4, -116.81],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_aa1b4b1b590bb241f4ff65ebb7c119a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65777ece8e5c7800aa66671a46a55932 = $(`<div id="html_65777ece8e5c7800aa66671a46a55932" style="width: 100.0%; height: 100.0%;"><b>Fox Creek</b><br>         Country: Canada<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_aa1b4b1b590bb241f4ff65ebb7c119a8.setContent(html_65777ece8e5c7800aa66671a46a55932);
+            
+        
+
+        circle_marker_7d1b6a578ab4ea3feeb1569a902d856e.bindPopup(popup_aa1b4b1b590bb241f4ff65ebb7c119a8)
+        ;
+
+        
+    
+    
+            var circle_marker_44fddbc1f1030ad0db0e94bb64c0b856 = L.circleMarker(
+                [38.95, -113.12],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_60b12fbca3d1e94a9df47cf023f663f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_957bb461fe46c0ab4a68677c5c19dbb9 = $(`<div id="html_957bb461fe46c0ab4a68677c5c19dbb9" style="width: 100.0%; height: 100.0%;"><b>Sevier Lake</b><br>         Country: United States of America<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_60b12fbca3d1e94a9df47cf023f663f2.setContent(html_957bb461fe46c0ab4a68677c5c19dbb9);
+            
+        
+
+        circle_marker_44fddbc1f1030ad0db0e94bb64c0b856.bindPopup(popup_60b12fbca3d1e94a9df47cf023f663f2)
+        ;
+
+        
+    
+    
+            var circle_marker_cf8568921f9dfd622a92c835d6119bb5 = L.circleMarker(
+                [52.08, 5.12],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_18ef1bab3368ea3ccd862a0c2a13475e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e2754fa7dba6fee18a41022414c688e = $(`<div id="html_2e2754fa7dba6fee18a41022414c688e" style="width: 100.0%; height: 100.0%;"><b>Utrecht</b><br>         Country: Netherlands<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_18ef1bab3368ea3ccd862a0c2a13475e.setContent(html_2e2754fa7dba6fee18a41022414c688e);
+            
+        
+
+        circle_marker_cf8568921f9dfd622a92c835d6119bb5.bindPopup(popup_18ef1bab3368ea3ccd862a0c2a13475e)
+        ;
+
+        
+    
+    
+            var circle_marker_5994648b5ba57104a6f3652752cc97ab = L.circleMarker(
+                [-21.78, -67.68],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_3fef34086b68a80296551ba18dddd57e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5f017efc256acb4423cad73c8071e3 = $(`<div id="html_0c5f017efc256acb4423cad73c8071e3" style="width: 100.0%; height: 100.0%;"><b>Lípez</b><br>         Country: Bolivia<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_3fef34086b68a80296551ba18dddd57e.setContent(html_0c5f017efc256acb4423cad73c8071e3);
+            
+        
+
+        circle_marker_5994648b5ba57104a6f3652752cc97ab.bindPopup(popup_3fef34086b68a80296551ba18dddd57e)
+        ;
+
+        
+    
+    
+            var circle_marker_0176f17c0cadb672ea4ca8a804e2c444 = L.circleMarker(
+                [-24.24, -67.45],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_ac292be68b63c47de0e38453cef76bf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18a672abe2fde8aa0404d00ad7fdb00d = $(`<div id="html_18a672abe2fde8aa0404d00ad7fdb00d" style="width: 100.0%; height: 100.0%;"><b>Arizaro</b><br>         Country: Argentina<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_ac292be68b63c47de0e38453cef76bf4.setContent(html_18a672abe2fde8aa0404d00ad7fdb00d);
+            
+        
+
+        circle_marker_0176f17c0cadb672ea4ca8a804e2c444.bindPopup(popup_ac292be68b63c47de0e38453cef76bf4)
+        ;
+
+        
+    
+    
+            var circle_marker_9997cd589717eddc88ebe94e28007ed6 = L.circleMarker(
+                [-23.5, -66.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_0cbec0d2aff96056089da9edb3777a13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab1b4bffc3ccedd408997f4860bf723b = $(`<div id="html_ab1b4bffc3ccedd408997f4860bf723b" style="width: 100.0%; height: 100.0%;"><b>Olaroz-Cauchari</b><br>         Country: Argentina<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_0cbec0d2aff96056089da9edb3777a13.setContent(html_ab1b4bffc3ccedd408997f4860bf723b);
+            
+        
+
+        circle_marker_9997cd589717eddc88ebe94e28007ed6.bindPopup(popup_0cbec0d2aff96056089da9edb3777a13)
+        ;
+
+        
+    
+    
+            var circle_marker_fa1786da2e2bc68269ff9ae35a18cb6e = L.circleMarker(
+                [-23.7, -68.25],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_c461634b994c27235b55fcf46d421a16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b420a3bcc38d6b930962ec39fe616a2f = $(`<div id="html_b420a3bcc38d6b930962ec39fe616a2f" style="width: 100.0%; height: 100.0%;"><b>Atacama</b><br>         Country: Chile<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_c461634b994c27235b55fcf46d421a16.setContent(html_b420a3bcc38d6b930962ec39fe616a2f);
+            
+        
+
+        circle_marker_fa1786da2e2bc68269ff9ae35a18cb6e.bindPopup(popup_c461634b994c27235b55fcf46d421a16)
+        ;
+
+        
+    
+    
+            var circle_marker_fb86958a9a47b8132c1fa2f8793dc24b = L.circleMarker(
+                [-8.46, -77.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_af93afefe4209da8233e9deb41729c8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_770e20a229b05ee06ac10b21ddb266c2 = $(`<div id="html_770e20a229b05ee06ac10b21ddb266c2" style="width: 100.0%; height: 100.0%;"><b>Pasto Bueno</b><br>         Country: Peru<br>         Type: Li Basin Brines<br>         Compatible: LiOH, LiCl, Li₂CO₃</div>`)[0];
+                popup_af93afefe4209da8233e9deb41729c8b.setContent(html_770e20a229b05ee06ac10b21ddb266c2);
+            
+        
+
+        circle_marker_fb86958a9a47b8132c1fa2f8793dc24b.bindPopup(popup_af93afefe4209da8233e9deb41729c8b)
+        ;
+
+        
+    
+    
+            var circle_marker_f35e1bb26fccdb56280e3c466213c237 = L.circleMarker(
+                [50.65, 109.88],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_2a418ac269a9c01c7fd3ade595ec98c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e611d9b03d109dbcd02d39ac377311ee = $(`<div id="html_e611d9b03d109dbcd02d39ac377311ee" style="width: 100.0%; height: 100.0%;"><b>Malkhan</b><br>         Country: Russia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_2a418ac269a9c01c7fd3ade595ec98c9.setContent(html_e611d9b03d109dbcd02d39ac377311ee);
+            
+        
+
+        circle_marker_f35e1bb26fccdb56280e3c466213c237.bindPopup(popup_2a418ac269a9c01c7fd3ade595ec98c9)
+        ;
+
+        
+    
+    
+            var circle_marker_a921f66ef99b6c470431567cd4d9c0a5 = L.circleMarker(
+                [50.34, -95.32],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_3873d85a60cb7b2feb44fa53d0eede0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8d2edca4ab39992d8e97b9c14f945e4 = $(`<div id="html_d8d2edca4ab39992d8e97b9c14f945e4" style="width: 100.0%; height: 100.0%;"><b>Greer</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_3873d85a60cb7b2feb44fa53d0eede0d.setContent(html_d8d2edca4ab39992d8e97b9c14f945e4);
+            
+        
+
+        circle_marker_a921f66ef99b6c470431567cd4d9c0a5.bindPopup(popup_3873d85a60cb7b2feb44fa53d0eede0d)
+        ;
+
+        
+    
+    
+            var circle_marker_30984c4933d0188fd579afc42b113be0 = L.circleMarker(
+                [50.34, -94.06],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_0b00208afcaf466abb9ff0c2facdb7ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d45e6a2bd45d305ef72943ea92476c22 = $(`<div id="html_d45e6a2bd45d305ef72943ea92476c22" style="width: 100.0%; height: 100.0%;"><b>Big Whopper</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_0b00208afcaf466abb9ff0c2facdb7ce.setContent(html_d45e6a2bd45d305ef72943ea92476c22);
+            
+        
+
+        circle_marker_30984c4933d0188fd579afc42b113be0.bindPopup(popup_0b00208afcaf466abb9ff0c2facdb7ce)
+        ;
+
+        
+    
+    
+            var circle_marker_cda8ea81b46fdd9fc2c966ccc7c50c9e = L.circleMarker(
+                [49.86, -92.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_34783451ca818d03113c806f1f3dd419 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ffcd320a1f8f34255c1c20b730a981c = $(`<div id="html_9ffcd320a1f8f34255c1c20b730a981c" style="width: 100.0%; height: 100.0%;"><b>Gullwing Lake</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_34783451ca818d03113c806f1f3dd419.setContent(html_9ffcd320a1f8f34255c1c20b730a981c);
+            
+        
+
+        circle_marker_cda8ea81b46fdd9fc2c966ccc7c50c9e.bindPopup(popup_34783451ca818d03113c806f1f3dd419)
+        ;
+
+        
+    
+    
+            var circle_marker_9799420e7bdf484790a861973dbbc827 = L.circleMarker(
+                [49.82, -92.66],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_a5519d6afdb4fa7cc373b66abdd7a684 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c420dce679c422a7496a5c27db032ba6 = $(`<div id="html_c420dce679c422a7496a5c27db032ba6" style="width: 100.0%; height: 100.0%;"><b>Mavis</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_a5519d6afdb4fa7cc373b66abdd7a684.setContent(html_c420dce679c422a7496a5c27db032ba6);
+            
+        
+
+        circle_marker_9799420e7bdf484790a861973dbbc827.bindPopup(popup_a5519d6afdb4fa7cc373b66abdd7a684)
+        ;
+
+        
+    
+    
+            var circle_marker_03f79291dc02aeeba9fc5296c830eb73 = L.circleMarker(
+                [49.42, 16.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_cf606a08d43c8a60900318eea5daa224 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bd33a8593877442694772cbe4f03cc9 = $(`<div id="html_8bd33a8593877442694772cbe4f03cc9" style="width: 100.0%; height: 100.0%;"><b>Oldrich</b><br>         Country: Czech Republic<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_cf606a08d43c8a60900318eea5daa224.setContent(html_8bd33a8593877442694772cbe4f03cc9);
+            
+        
+
+        circle_marker_03f79291dc02aeeba9fc5296c830eb73.bindPopup(popup_cf606a08d43c8a60900318eea5daa224)
+        ;
+
+        
+    
+    
+            var circle_marker_2e8fd41f26618c2349e69c05623e138e = L.circleMarker(
+                [48.71, -77.81],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_98b13e68878352a31a70afb70e20cf02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cad2e7fa7817c0eda02a862d15a88ff5 = $(`<div id="html_cad2e7fa7817c0eda02a862d15a88ff5" style="width: 100.0%; height: 100.0%;"><b>Lacorne</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_98b13e68878352a31a70afb70e20cf02.setContent(html_cad2e7fa7817c0eda02a862d15a88ff5);
+            
+        
+
+        circle_marker_2e8fd41f26618c2349e69c05623e138e.bindPopup(popup_98b13e68878352a31a70afb70e20cf02)
+        ;
+
+        
+    
+    
+            var circle_marker_88d8401f541e5000f08b7d83b908decb = L.circleMarker(
+                [47.41, 88.81],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_6cfeb4b0d752dfff09b6fcd56c4f3d0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddf0cd14ab5bcbe9103c085d9bd2b643 = $(`<div id="html_ddf0cd14ab5bcbe9103c085d9bd2b643" style="width: 100.0%; height: 100.0%;"><b>Altai</b><br>         Country: China<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_6cfeb4b0d752dfff09b6fcd56c4f3d0b.setContent(html_ddf0cd14ab5bcbe9103c085d9bd2b643);
+            
+        
+
+        circle_marker_88d8401f541e5000f08b7d83b908decb.bindPopup(popup_6cfeb4b0d752dfff09b6fcd56c4f3d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_d80e137e37e44e76253250a295b30079 = L.circleMarker(
+                [47.19, 14.93],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_c8549564f86c34226b2a3593ebb0e1ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b8f5fe42c89e367837c4d44f18fc2b3 = $(`<div id="html_2b8f5fe42c89e367837c4d44f18fc2b3" style="width: 100.0%; height: 100.0%;"><b>Koralpe</b><br>         Country: Austria<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_c8549564f86c34226b2a3593ebb0e1ce.setContent(html_2b8f5fe42c89e367837c4d44f18fc2b3);
+            
+        
+
+        circle_marker_d80e137e37e44e76253250a295b30079.bindPopup(popup_c8549564f86c34226b2a3593ebb0e1ce)
+        ;
+
+        
+    
+    
+            var circle_marker_e026b7f4c819dbea1953664c9c07b301 = L.circleMarker(
+                [46.0, 8.71],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_5ef7c927ade018bec21cf52028d2d46e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2aa2e79927b7b8c99f9be45f2248dcbe = $(`<div id="html_2aa2e79927b7b8c99f9be45f2248dcbe" style="width: 100.0%; height: 100.0%;"><b>Brissago</b><br>         Country: Italy<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_5ef7c927ade018bec21cf52028d2d46e.setContent(html_2aa2e79927b7b8c99f9be45f2248dcbe);
+            
+        
+
+        circle_marker_e026b7f4c819dbea1953664c9c07b301.bindPopup(popup_5ef7c927ade018bec21cf52028d2d46e)
+        ;
+
+        
+    
+    
+            var circle_marker_c5feb36455cf1610d17a7181fa4e70d8 = L.circleMarker(
+                [45.98, 1.39],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_ae00b814bfb72bb0dad13560a3507342 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c037f7247065a214253ed5a02c45b8f5 = $(`<div id="html_c037f7247065a214253ed5a02c45b8f5" style="width: 100.0%; height: 100.0%;"><b>Chedeville</b><br>         Country: France<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_ae00b814bfb72bb0dad13560a3507342.setContent(html_c037f7247065a214253ed5a02c45b8f5);
+            
+        
+
+        circle_marker_c5feb36455cf1610d17a7181fa4e70d8.bindPopup(popup_ae00b814bfb72bb0dad13560a3507342)
+        ;
+
+        
+    
+    
+            var circle_marker_cb8c3fa9b97da651b8851aec1d855064 = L.circleMarker(
+                [45.85, -88.35],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_9322716637bddf77228092e2d97a378b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f05ac2e03a8332f430cf462b981282d5 = $(`<div id="html_f05ac2e03a8332f430cf462b981282d5" style="width: 100.0%; height: 100.0%;"><b>Animikie</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_9322716637bddf77228092e2d97a378b.setContent(html_f05ac2e03a8332f430cf462b981282d5);
+            
+        
+
+        circle_marker_cb8c3fa9b97da651b8851aec1d855064.bindPopup(popup_9322716637bddf77228092e2d97a378b)
+        ;
+
+        
+    
+    
+            var circle_marker_d67763e26d9ed491d5eff62b9330a01e = L.circleMarker(
+                [45.68, -66.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_8fb320d8e02067cb2d0640fe730fa026 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7360bd25a332ed77b268fcb093c1ba5 = $(`<div id="html_b7360bd25a332ed77b268fcb093c1ba5" style="width: 100.0%; height: 100.0%;"><b>Brazil Lake</b><br>         Country: Canada<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_8fb320d8e02067cb2d0640fe730fa026.setContent(html_b7360bd25a332ed77b268fcb093c1ba5);
+            
+        
+
+        circle_marker_d67763e26d9ed491d5eff62b9330a01e.bindPopup(popup_8fb320d8e02067cb2d0640fe730fa026)
+        ;
+
+        
+    
+    
+            var circle_marker_18425876311b77c59e556eb84a54451a = L.circleMarker(
+                [43.75, -71.89],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_00db67e5718139660472ba9cd609ae95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_039f8104f8d14aefb227822f5265a472 = $(`<div id="html_039f8104f8d14aefb227822f5265a472" style="width: 100.0%; height: 100.0%;"><b>Palermo</b><br>         Country: United States of America<br>         Type: Be Type Rare-Metal Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_00db67e5718139660472ba9cd609ae95.setContent(html_039f8104f8d14aefb227822f5265a472);
+            
+        
+
+        circle_marker_18425876311b77c59e556eb84a54451a.bindPopup(popup_00db67e5718139660472ba9cd609ae95)
+        ;
+
+        
+    
+    
+            var circle_marker_03470c3ac4c50cf227ef53073362d42e = L.circleMarker(
+                [43.18, -72.29],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_defcac116d72c4fb07c64b007d3601c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9113579a10f4fef0d95a384049caf17 = $(`<div id="html_a9113579a10f4fef0d95a384049caf17" style="width: 100.0%; height: 100.0%;"><b>Beryl Mountain</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_defcac116d72c4fb07c64b007d3601c1.setContent(html_a9113579a10f4fef0d95a384049caf17);
+            
+        
+
+        circle_marker_03470c3ac4c50cf227ef53073362d42e.bindPopup(popup_defcac116d72c4fb07c64b007d3601c1)
+        ;
+
+        
+    
+    
+            var circle_marker_c82ec44db16e30c733c2b36f6631166f = L.circleMarker(
+                [42.77, -107.44],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_0d29203d60bc79d9d02db4ebed4ea823 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e316ed038936830a97b000157464bbd = $(`<div id="html_0e316ed038936830a97b000157464bbd" style="width: 100.0%; height: 100.0%;"><b>Black Mountain</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_0d29203d60bc79d9d02db4ebed4ea823.setContent(html_0e316ed038936830a97b000157464bbd);
+            
+        
+
+        circle_marker_c82ec44db16e30c733c2b36f6631166f.bindPopup(popup_0d29203d60bc79d9d02db4ebed4ea823)
+        ;
+
+        
+    
+    
+            var circle_marker_1d8beac3a61dbfa087072effe8f0fb24 = L.circleMarker(
+                [42.75, 10.21],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_7abda37e9c421948e4a612752f08e478 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb8b2b0d5788dd07b483dfe18f6559c1 = $(`<div id="html_cb8b2b0d5788dd07b483dfe18f6559c1" style="width: 100.0%; height: 100.0%;"><b>Elba</b><br>         Country: Italy<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_7abda37e9c421948e4a612752f08e478.setContent(html_cb8b2b0d5788dd07b483dfe18f6559c1);
+            
+        
+
+        circle_marker_1d8beac3a61dbfa087072effe8f0fb24.bindPopup(popup_7abda37e9c421948e4a612752f08e478)
+        ;
+
+        
+    
+    
+            var circle_marker_126456c8f3f5199a37457951f0b38449 = L.circleMarker(
+                [42.42, -72.87],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_efaed08fc31648402135e845134624ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed6b281be04e3b432984a738dbf13a3b = $(`<div id="html_ed6b281be04e3b432984a738dbf13a3b" style="width: 100.0%; height: 100.0%;"><b>Clark</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_efaed08fc31648402135e845134624ca.setContent(html_ed6b281be04e3b432984a738dbf13a3b);
+            
+        
+
+        circle_marker_126456c8f3f5199a37457951f0b38449.bindPopup(popup_efaed08fc31648402135e845134624ca)
+        ;
+
+        
+    
+    
+            var circle_marker_c17d274274836ccedd199bcc1f7b8253 = L.circleMarker(
+                [41.63, -7.78],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_0fbe4d81e03727730958c846068c3d1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4470b25ec0b2a795a4be1f29acfe8a43 = $(`<div id="html_4470b25ec0b2a795a4be1f29acfe8a43" style="width: 100.0%; height: 100.0%;"><b>Covas de Barroso</b><br>         Country: Portugal<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_0fbe4d81e03727730958c846068c3d1c.setContent(html_4470b25ec0b2a795a4be1f29acfe8a43);
+            
+        
+
+        circle_marker_c17d274274836ccedd199bcc1f7b8253.bindPopup(popup_0fbe4d81e03727730958c846068c3d1c)
+        ;
+
+        
+    
+    
+            var circle_marker_94490ef5e0fdd5426063adc96046800e = L.circleMarker(
+                [41.59, -72.59],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_60a434017eb7ad09aa04fa1141f0a7e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4edc7a1eb431178041acfce941e80728 = $(`<div id="html_4edc7a1eb431178041acfce941e80728" style="width: 100.0%; height: 100.0%;"><b>Anderson</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_60a434017eb7ad09aa04fa1141f0a7e1.setContent(html_4edc7a1eb431178041acfce941e80728);
+            
+        
+
+        circle_marker_94490ef5e0fdd5426063adc96046800e.bindPopup(popup_60a434017eb7ad09aa04fa1141f0a7e1)
+        ;
+
+        
+    
+    
+            var circle_marker_58992746e9522a9850bd2e13901cd6b2 = L.circleMarker(
+                [40.55, -105.37],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_4808195ed38aaa72025ae6121d033ffa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d521777385b00ca14392291fed9af43c = $(`<div id="html_d521777385b00ca14392291fed9af43c" style="width: 100.0%; height: 100.0%;"><b>Crystal Mountain</b><br>         Country: United States of America<br>         Type: Be Type Rare-Metal Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_4808195ed38aaa72025ae6121d033ffa.setContent(html_d521777385b00ca14392291fed9af43c);
+            
+        
+
+        circle_marker_58992746e9522a9850bd2e13901cd6b2.bindPopup(popup_4808195ed38aaa72025ae6121d033ffa)
+        ;
+
+        
+    
+    
+            var circle_marker_a75ccba52b79b031796589eb74491cb5 = L.circleMarker(
+                [38.54, -106.63],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_b2c4aefabc093d2459789d6b169c8a6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28bf7b8ad154e2170a9bd79b2b99897c = $(`<div id="html_28bf7b8ad154e2170a9bd79b2b99897c" style="width: 100.0%; height: 100.0%;"><b>Quartz Cr</b><br>         Country: United States of America<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_b2c4aefabc093d2459789d6b169c8a6d.setContent(html_28bf7b8ad154e2170a9bd79b2b99897c);
+            
+        
+
+        circle_marker_a75ccba52b79b031796589eb74491cb5.bindPopup(popup_b2c4aefabc093d2459789d6b169c8a6d)
+        ;
+
+        
+    
+    
+            var circle_marker_cd2e378a30fe5aaf8e30146407661294 = L.circleMarker(
+                [-31.08, 121.47],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_e97d02424ef5f6fff20d333dd857ed36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c7080044dc7ad96c230dc1868d3fd21 = $(`<div id="html_0c7080044dc7ad96c230dc1868d3fd21" style="width: 100.0%; height: 100.0%;"><b>Marion</b><br>         Country: Australia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_e97d02424ef5f6fff20d333dd857ed36.setContent(html_0c7080044dc7ad96c230dc1868d3fd21);
+            
+        
+
+        circle_marker_cd2e378a30fe5aaf8e30146407661294.bindPopup(popup_e97d02424ef5f6fff20d333dd857ed36)
+        ;
+
+        
+    
+    
+            var circle_marker_815ba9da8eebd5c4f3576ed2ad070394 = L.circleMarker(
+                [-31.1, 121.08],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_2a617a1c22e33f8827c300149ceacf5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2a9afc16783576fe12dc3c8857cab86 = $(`<div id="html_a2a9afc16783576fe12dc3c8857cab86" style="width: 100.0%; height: 100.0%;"><b>Tantalite</b><br>         Country: Australia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_2a617a1c22e33f8827c300149ceacf5a.setContent(html_a2a9afc16783576fe12dc3c8857cab86);
+            
+        
+
+        circle_marker_815ba9da8eebd5c4f3576ed2ad070394.bindPopup(popup_2a617a1c22e33f8827c300149ceacf5a)
+        ;
+
+        
+    
+    
+            var circle_marker_464099503b27435794f604acdec65221 = L.circleMarker(
+                [-31.52, 122.18],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_88af6fcd22e586ad5ed05b1e7b4f4d44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8b1da93eb85d8ef73d1d771f9196975 = $(`<div id="html_a8b1da93eb85d8ef73d1d771f9196975" style="width: 100.0%; height: 100.0%;"><b>Bald</b><br>         Country: Australia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_88af6fcd22e586ad5ed05b1e7b4f4d44.setContent(html_a8b1da93eb85d8ef73d1d771f9196975);
+            
+        
+
+        circle_marker_464099503b27435794f604acdec65221.bindPopup(popup_88af6fcd22e586ad5ed05b1e7b4f4d44)
+        ;
+
+        
+    
+    
+            var circle_marker_f30b009d030c4bce9fbd7a0532351dd0 = L.circleMarker(
+                [-32.31, 121.79],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_529cda148e5856fe24050212b8b2c6e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_384f45e2b00d5973fdca6daeba76d085 = $(`<div id="html_384f45e2b00d5973fdca6daeba76d085" style="width: 100.0%; height: 100.0%;"><b>Deans</b><br>         Country: Australia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_529cda148e5856fe24050212b8b2c6e2.setContent(html_384f45e2b00d5973fdca6daeba76d085);
+            
+        
+
+        circle_marker_f30b009d030c4bce9fbd7a0532351dd0.bindPopup(popup_529cda148e5856fe24050212b8b2c6e2)
+        ;
+
+        
+    
+    
+            var circle_marker_94b139a7f4147df7f59c1cd57940ae4d = L.circleMarker(
+                [-32.39, -65.71],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_e221d99e60cba28d518f32b2e2693cae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d01019345e2264c16c6b23d2b4a13080 = $(`<div id="html_d01019345e2264c16c6b23d2b4a13080" style="width: 100.0%; height: 100.0%;"><b>Las Cuevas</b><br>         Country: Argentina<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_e221d99e60cba28d518f32b2e2693cae.setContent(html_d01019345e2264c16c6b23d2b4a13080);
+            
+        
+
+        circle_marker_94b139a7f4147df7f59c1cd57940ae4d.bindPopup(popup_e221d99e60cba28d518f32b2e2693cae)
+        ;
+
+        
+    
+    
+            var circle_marker_37404ee90505543beb2c4108e7fda03e = L.circleMarker(
+                [-32.98, -65.98],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_82bf47c5639d4810669c85a053d48971 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23b138ef0ff74ba5239bc4ac0dbfc19e = $(`<div id="html_23b138ef0ff74ba5239bc4ac0dbfc19e" style="width: 100.0%; height: 100.0%;"><b>San Luis</b><br>         Country: Argentina<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_82bf47c5639d4810669c85a053d48971.setContent(html_23b138ef0ff74ba5239bc4ac0dbfc19e);
+            
+        
+
+        circle_marker_37404ee90505543beb2c4108e7fda03e.bindPopup(popup_82bf47c5639d4810669c85a053d48971)
+        ;
+
+        
+    
+    
+            var circle_marker_a113714a0d3ea152091a72864918347f = L.circleMarker(
+                [-33.56, 120.04],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_d4c132aa125d5334577e7abcbed3ea2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ae5f096e09c0b7d3911eb11208539a5 = $(`<div id="html_4ae5f096e09c0b7d3911eb11208539a5" style="width: 100.0%; height: 100.0%;"><b>Catllin</b><br>         Country: Australia<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_d4c132aa125d5334577e7abcbed3ea2b.setContent(html_4ae5f096e09c0b7d3911eb11208539a5);
+            
+        
+
+        circle_marker_a113714a0d3ea152091a72864918347f.bindPopup(popup_d4c132aa125d5334577e7abcbed3ea2b)
+        ;
+
+        
+    
+    
+            var circle_marker_2035d547d51de88a793f91e6b4cfaba9 = L.circleMarker(
+                [50.71, -4.03],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_3b99bd70740653457ce3cd2ac7bbd8b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c51acb6200eb685bc62ceeed896f42c1 = $(`<div id="html_c51acb6200eb685bc62ceeed896f42c1" style="width: 100.0%; height: 100.0%;"><b>Meldon</b><br>         Country: England<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_3b99bd70740653457ce3cd2ac7bbd8b7.setContent(html_c51acb6200eb685bc62ceeed896f42c1);
+            
+        
+
+        circle_marker_2035d547d51de88a793f91e6b4cfaba9.bindPopup(popup_3b99bd70740653457ce3cd2ac7bbd8b7)
+        ;
+
+        
+    
+    
+            var circle_marker_fdcc2e2bf48eb7695de7b38643a01405 = L.circleMarker(
+                [50.42, 12.79],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_27865fcd38f3d174c7f7830f653c305e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbb5db732bfcdc21412599ba4ea331f6 = $(`<div id="html_cbb5db732bfcdc21412599ba4ea331f6" style="width: 100.0%; height: 100.0%;"><b>Podlesi</b><br>         Country: Czech Republic<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_27865fcd38f3d174c7f7830f653c305e.setContent(html_cbb5db732bfcdc21412599ba4ea331f6);
+            
+        
+
+        circle_marker_fdcc2e2bf48eb7695de7b38643a01405.bindPopup(popup_27865fcd38f3d174c7f7830f653c305e)
+        ;
+
+        
+    
+    
+            var circle_marker_d2a995b02423c18a3dfcd611e2bee1e3 = L.circleMarker(
+                [41.89, -118.14],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_5242e17e51fab18aae24645dc6354c93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_618687bfd275b3c143719f2bda7b078f = $(`<div id="html_618687bfd275b3c143719f2bda7b078f" style="width: 100.0%; height: 100.0%;"><b>Kings Valley</b><br>         Country: United States of America<br>         Type: Li-Clay<br>         Compatible: Li₂CO₃</div>`)[0];
+                popup_5242e17e51fab18aae24645dc6354c93.setContent(html_618687bfd275b3c143719f2bda7b078f);
+            
+        
+
+        circle_marker_d2a995b02423c18a3dfcd611e2bee1e3.bindPopup(popup_5242e17e51fab18aae24645dc6354c93)
+        ;
+
+        
+    
+    
+            var circle_marker_93c7919bc88877313e25b9403eff6812 = L.circleMarker(
+                [-19.96, 31.43],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_a4e3110592003c867a0c91464b4e39ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f7a945f66d4042f686be6dc22d26831 = $(`<div id="html_0f7a945f66d4042f686be6dc22d26831" style="width: 100.0%; height: 100.0%;"><b>Bikita</b><br>         Country: Zimbabwe<br>         Type: Be Type Rare-Metal Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_a4e3110592003c867a0c91464b4e39ea.setContent(html_0f7a945f66d4042f686be6dc22d26831);
+            
+        
+
+        circle_marker_93c7919bc88877313e25b9403eff6812.bindPopup(popup_a4e3110592003c867a0c91464b4e39ea)
+        ;
+
+        
+    
+    
+            var circle_marker_60a2da351b4c19f988b87eee23aec4ae = L.circleMarker(
+                [-7.28, 27.45],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_293f051bf5b61d21a4511e39bf984ac9);
+        
+    
+        var popup_a66b69e4bce38b881adcee99e125593e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dba387989c5302491c63db94c58aa7c = $(`<div id="html_1dba387989c5302491c63db94c58aa7c" style="width: 100.0%; height: 100.0%;"><b>Manono-Kitolo Mine</b><br>         Country: Democratic Republic of the Congo<br>         Type: Pegmatite<br>         Compatible: LiOH, Li₂CO₃</div>`)[0];
+                popup_a66b69e4bce38b881adcee99e125593e.setContent(html_1dba387989c5302491c63db94c58aa7c);
+            
+        
+
+        circle_marker_60a2da351b4c19f988b87eee23aec4ae.bindPopup(popup_a66b69e4bce38b881adcee99e125593e)
+        ;
+
+        
+    
+    
+            marker_cluster_293f051bf5b61d21a4511e39bf984ac9.addTo(map_a74b9f79c8b0e94e509932122780cce0);
+        
+</script>
+</html>
